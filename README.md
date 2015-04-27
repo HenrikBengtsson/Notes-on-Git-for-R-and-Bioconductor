@@ -49,7 +49,7 @@ Setup:
 1. Add a 2nd remote repository named `release` pointing to the GitHub "BioC release" repository for you package
   - `git remote add release http://github.com/<user>/<pkg>-BioC-release`
 
-2. Make the local `BioC-release` branch push to the `master` branch of this "release" repository:
-  - `git push --force -u release BioC-release:master`
+2. Make the local `release` branch push to the `master` branch of this "release" repository:
+  - `git push -u release release:master`
 
 
