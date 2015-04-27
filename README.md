@@ -9,7 +9,7 @@
 ## Bioconductor-specific notes
 
 ### Bioconductor Git-SVN bridge
-In this part it is described how to setup _one local Git repository_ that holds _two branches_, `master`(*) and `release`, that are "hot-linked" to the _"release"_ and the _"devel"_ versions of a Bioconductor package, respectively.  The hot-linking is done via two separate GitHub repositories that each are "bridged" to the Bioconductor Subversion repositories via the [Bioconductor Git-SVN bridge](http://master.bioconductor.org/developers/how-to/git-svn/) web service.  Here is an overview:
+In this part it is described how to setup _one local Git repository_ that holds _two branches_, `master`(*) and `release`, that are "hot-linked" to the _"release"_ and the _"devel"_ versions of a Bioconductor package, respectively.  The hot-linking is done via two separate GitHub repositories that each are "bridged" to the Bioconductor Subversion repositories via the [Bioconductor Git-SVN bridge web application](https://gitsvn.bioconductor.org/).  Here is an overview:
 
 * Local `master` branch <=> GitHub "devel" repository (`master` branch) <=> Bioconductor Subversion "devel" repository
 * Local `release` branch <=> GitHub "release" repository (`master` branch) <=> Bioconductor Subversion "release" repository
@@ -18,10 +18,11 @@ The end result is such that whenever commits to the `master` branch are pushed, 
 
 Similarly, whenever commits to the `BioC-release` branch are pushed, the "release" version of the package will be forwarded and eventually be built on the Bioconductor side.  Also this hot-link is bi-directional.
 
-(*) Ideally we would call the `master` branch `devel` to reflect the fact that it is connected to the BioC "devel" package version, but the Bioconductor-to-GitHub bridge requires it to be named `master`.
+(*) Ideally we would call the `master` branch `devel` to reflect the fact that it is connected to the BioC "devel" package version, but the Bioconductor-to-GitHub bridge requires it to be named `master`.  Actually, you may use `devel` locally, but it has to be named `master` on GitHub; I leave it to advanced Git users how to set that up.
+
+For more information on how to setup the Git-SVN bridge, see http://master.bioconductor.org/developers/how-to/git-svn/
 
 
-* [Git-SVN bridge web application](https://gitsvn.bioconductor.org/)
 
 Subversion repositioryThe two versions are contained in two different Git branches, namely:
 
