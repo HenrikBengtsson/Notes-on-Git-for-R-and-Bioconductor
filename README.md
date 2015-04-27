@@ -14,7 +14,9 @@ In this part it is described how to setup _one local Git repository_ that holds 
 * Local `master` branch <=> GitHub "devel" repository (`master` branch) <=> Bioconductor Subversion "devel" repository
 * Local `release` branch <=> GitHub "release" repository (`master` branch) <=> Bioconductor Subversion "release" repository
 
-The end result is such that whenever commits to the `master` branch are pushed, the updates with be immediately reflected on Bioconductor Subversion repository that holds the "devel" version of the package.  Any updates before 4:20pm Seattle time will checked over night, and the results and the updated package will be available before noon the next day.   Similarly, whenever commits to the `BioC-release` branch are pushed, the "release" version of the package will be forward and build on Bioconductor.
+The end result is such that whenever commits to the `master` branch are pushed, the updates are immediately committed to the Bioconductor Subversion repository that holds the "devel" version of the package.  Any updates before 4:20pm Seattle time will checked over night, and the results and the updated package will be available before noon the next day.  This hot-linking is bi-directional, meaning that any commits to the Bioconductor Subversion repository will immediately be pushed to the GitHub repository via the bridge.
+
+Similarly, whenever commits to the `BioC-release` branch are pushed, the "release" version of the package will be forwarded and eventually be built on the Bioconductor side.  Also this hot-link is bi-directional.
 
 (*) Ideally we would call the `master` branch `devel` to reflect the fact that it is connected to the BioC "devel" package version, but the Bioconductor-to-GitHub bridge requires it to be named `master`.
 
