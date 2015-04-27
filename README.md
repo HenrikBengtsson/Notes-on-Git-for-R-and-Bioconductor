@@ -9,7 +9,7 @@
 ## Bioconductor-specific notes
 
 ### Bioconductor-to-GitHub bridge
-In this part it is described how to setup _one local Git repository_ that holds _two branches_, `master`(*) and `release`, that are "hot-linked" to the _BioC release_ and the _BioC devel_ versions of a Bioconductor package, respectively.  The hot-linking is done via two separate GitHub repositories that each are "bridged" to Bioconductor via the Bioconductor-to-GitHub bridge web service.  Here is an overview:
+In this part it is described how to setup _one local Git repository_ that holds _two branches_, `master`(*) and `release`, that are "hot-linked" to the _"release"_ and the _"devel"_ versions of a Bioconductor package, respectively.  The hot-linking is done via two separate GitHub repositories that each are "bridged" to the Bioconductor Subversion repositories via the Bioconductor-to-GitHub bridge web service.  Here is an overview:
 
 * Local `master` branch <=> GitHub "devel" repository (`master` branch) <=> Bioconductor Subversion "devel" repository
 * Local `release` branch <=> GitHub "release" repository (`master` branch) <=> Bioconductor Subversion "release" repository
