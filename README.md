@@ -26,6 +26,12 @@ Below describes how to setup a local Git repository that holds both the release 
 
 *IMPORTANT*: It is important to understand that these two branch should be considered "live", i.e. any commits and pushes to them will immediately be pushed to the corresponding SVN repositories over on the Bioconductor servers.
 
-`git push --force -u release BioC-release:master`
+Setup:  
+
+1. Add a 2nd remote repository named `release` pointing to the GitHub "BioC release" repository for you package
+  - `git remote add release http://github.com/<user>/<pkg>-BioC-release`
+
+2. Make the local `BioC-release` branch push to the `master` branch of this "release" repository:
+  - `git push --force -u release BioC-release:master`
 
 
