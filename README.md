@@ -9,6 +9,8 @@
 ### Setup
 
 #### Configuration colors
+Available colors are: `normal`, `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`
+
 ```bash
 git config --global color.status.changed white
 git config --global color.status.untracked magenta
