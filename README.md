@@ -25,6 +25,12 @@ git config --global color.status.untracked magenta
 
 ## Bioconductor-specific notes
 
+*** PLEASE STOP READING ***
+*** PLEASE STOP READING ***
+*** PLEASE STOP READING ***
+_The below text is not ready yet_
+*** PLEASE STOP READING ***
+
 ### Bioconductor Git-SVN bridge
 In this part it is described how to setup _one local Git repository_ that holds _two branches_, `master`(*) and `release`, that are "hot-linked" to the _"release"_ and the _"devel"_ versions of a Bioconductor package, respectively.  The hot-linking is done via two separate GitHub repositories that each are "bridged" to the Bioconductor Subversion repositories via the [Bioconductor Git-SVN bridge web application](https://gitsvn.bioconductor.org/).  Here is an overview:
 
