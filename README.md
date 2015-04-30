@@ -8,11 +8,11 @@
 
 ### Setup
 
-#### Configuration colors
-Available colors are: `normal`, `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`
+#### Configurating colors and styles
+[Available colors](http://sedodream.com/2012/05/05/GitCustomizingColorsForWindowsIncludingPoshgit.aspx) are: `normal`, `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`
 
 ```bash
-git config --global color.status.changed white
+git config --global color.status.changed "white bold"
 git config --global color.status.untracked magenta
 ```
 
