@@ -2,8 +2,17 @@
 
 ## Git notes
 
+### Every day actions
 * Delete local branch: `git branch -d <branch-name>`
 * Delete remote branch: `git push origin :<branch-name>`
+
+### Setup
+
+#### Configuration colors
+```bash
+git config --global color.status.changed white
+git config --global color.status.untracked magenta
+```
 
 
 ## Bioconductor-specific notes
