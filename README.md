@@ -28,7 +28,7 @@ git config --global color.status.untracked magenta
 **PLEASE STOP READING**  
 **PLEASE STOP READING**  
 **PLEASE STOP READING**  
-_The below text is not ready yet_
+_The below text is not ready yet_  
 **PLEASE STOP READING**  
 **PLEASE STOP READING**  
 **PLEASE STOP READING**  
