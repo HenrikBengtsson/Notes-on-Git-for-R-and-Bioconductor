@@ -8,10 +8,15 @@
 
 ### Setup
 
+#### Change default editor
+```sh
+git config --global core.editor emacs
+```
+
 #### Configurating colors and styles
 [Available colors](http://sedodream.com/2012/05/05/GitCustomizingColorsForWindowsIncludingPoshgit.aspx) are: `normal`, `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`
 
-```bash
+```sh
 git config --global color.status.added "white bold"
 git config --global color.status.changed "white bold"
 git config --global color.status.untracked magenta
