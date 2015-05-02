@@ -6,6 +6,15 @@
 * Delete local branch: `git branch -d <branch-name>`
 * Delete remote branch: `git push origin :<branch-name>`
 
+### Occasionally
+* Create an empty branch
+```sh
+git checkout --orphan <new-branch-name>
+git rm --cached -r .
+git commit --allow-empty -m "Initial empty branch <new-branch-name>"
+git push --set-upstream origin <new-branch-name>
+```
+
 ### Setup
 
 #### Change default editor
