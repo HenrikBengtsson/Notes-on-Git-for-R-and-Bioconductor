@@ -5,6 +5,8 @@
 ### Every day actions
 * Delete local branch: `git branch -d <branch-name>`
 * Delete remote branch: `git push origin :<branch-name>`
+* Delete local tag: `git tag -d <tag>` 
+* Delete remote tag: `git push origin :refs/tags/<tag>`
 
 ### Occasionally
 * Create an empty branch
